@@ -1,4 +1,4 @@
-import { createTimBox, decodeTimeBox, encodeTimeBox } from "../timeBox";
+import { createTimBox, decodeTimeBox, encodeTimeBox } from "../src/timeBox";
 
 test("Sunday at midnight for 5 minutes", () => {
   const block = createTimBox(0, 0, 0, 0, 5);

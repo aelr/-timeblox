@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "timeblox-monorepo",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",

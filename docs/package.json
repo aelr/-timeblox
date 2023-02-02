@@ -1,5 +1,5 @@
 {
-  "name": "designsystem",
+  "name": "timeblox-docs",
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",
