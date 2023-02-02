@@ -1,0 +1,52 @@
+/* TODO: Solve issue where custom scrollbar goes away lower than 758px and looks bad on desktops */
+
+:root {
+  --weekly-view-time-column-width: 5rem;
+}
+
+.weekly-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-overflow: clip;
+  position: sticky;
+  top: 0;
+}
+
+.weekly-view>.header {
+  flex: 0 1 auto;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.weekly-view>.header,
+.weekly-view>.body {
+  display: grid;
+  grid-template-columns: var(--weekly-view-time-column-width) repeat(7, minmax(0, 1fr));
+}
+
+.weekly-view>.body {
+  flex: 1 1 auto;
+  grid-template-rows: repeat(288, 0.2rem);
+}
+
+/* Unset Half Moon button properties to re-use that styling */
+.weekly-view .calendar-event.btn {
+  height: unset;
+  display: unset;
+  padding: unset;
+
+}
+
+.weekly-view .hour-label-border {
+  background: rgb(168, 166, 166);
+  background: linear-gradient(180deg, rgba(168, 166, 166, 1) 0%, rgba(191, 189, 189, 0) 26%, rgba(255, 255, 255, 0) 100%);
+}
+
+.weekly-view .hour-label-border-subtle {
+  background: rgb(221, 221, 221);
+  background: linear-gradient(180deg, rgba(221, 221, 221, 1) 0%, rgba(255, 255, 255, 0) 26%, rgba(255, 255, 255, 0) 100%);
+}

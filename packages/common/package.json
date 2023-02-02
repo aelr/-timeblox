@@ -1,0 +1,13 @@
+{
+  "name": "timeblox-common",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "description": "",
+  "dependencies": {
+    "ajv": "^8.12.0"
+  }
+}

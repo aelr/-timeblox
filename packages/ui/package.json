@@ -1,0 +1,27 @@
+{
+  "name": "designsystem",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start"
+  },
+  "type": "module",
+  "devDependencies": {
+    "random-js": "^2.1.0",
+    "typescript": "^4.8.4",
+    "unocss": "^0.47.5",
+    "vite": "^3.1.8"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.28.0",
+    "@solidjs/router": "^0.5.0",
+    "date-fns": "^2.29.3",
+    "lodash": "^4.17.21",
+    "solid-js": "^1.6.2",
+    "solid-start": "^0.2.9",
+    "undici": "^5.11.0"
+  },
+  "engines": {
+    "node": ">=16.8"
+  }
+}

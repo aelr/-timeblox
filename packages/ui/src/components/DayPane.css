@@ -1,0 +1,15 @@
+.day-pane {
+    position: sticky;
+    top: 0;
+}
+
+.day-pane .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Surprised that the overflow-ellipsis class isn't in UnoCSS's Windi preset */
+.day-pane .overflow-ellipsis {
+    text-overflow: ellipsis;
+}

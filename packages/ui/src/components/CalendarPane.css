@@ -1,0 +1,11 @@
+.calendar-pane {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+    grid-template-rows: calc(100% - var(--navbar-fixed-bottom-height)) var(--navbar-fixed-bottom-height);
+}
+
+.calendar-pane>.weekly-view {
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+}
