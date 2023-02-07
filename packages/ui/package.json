@@ -1,24 +1,32 @@
 {
-  "name": "timeblox-ui",
+  "name": "ui",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "solid-start dev",
     "build": "solid-start build",
-    "start": "solid-start start"
+    "start": "solid-start start",
+    "preinstall": "npx only-allow pnpm"
   },
   "type": "module",
+  "exports": {
+    "**/*": "./dist/**/*.js"
+  },
   "devDependencies": {
     "random-js": "^2.1.0",
+    "tsconfig": "workspace:*",
     "typescript": "^4.8.4",
     "unocss": "^0.47.5",
     "vite": "^3.1.8"
   },
   "dependencies": {
-    "@solidjs/meta": "^0.28.0",
-    "@solidjs/router": "^0.5.0",
+    "@solidjs/meta": "^0.28.1",
+    "@solidjs/router": "^0.7.0",
     "date-fns": "^2.29.3",
     "lodash": "^4.17.21",
-    "solid-js": "^1.6.2",
-    "solid-start": "^0.2.9",
+    "solid-js": "^1.6.10",
+    "solid-start": "^0.2.20",
+    "solid-start-node": "^0.2.20",
     "undici": "^5.11.0"
   },
   "engines": {

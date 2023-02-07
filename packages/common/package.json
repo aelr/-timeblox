@@ -1,12 +1,20 @@
 {
-  "name": "timeblox-common",
+  "name": "common",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "exports": {
+    "**/*": "./dist/**/*.js"
   },
   "author": "",
   "license": "UNLICENSED",
   "description": "",
+  "devDependencies": {
+    "tsconfig": "workspace:*"
+  },
   "dependencies": {
     "ajv": "^8.12.0"
   }
