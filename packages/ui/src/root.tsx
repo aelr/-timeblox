@@ -12,7 +12,6 @@ import {
   Scripts,
   Title,
 } from "solid-start";
-import "halfmoon/css/halfmoon-variables.min.css";
 import "uno.css";
 import "./root.css";
 import PageFrame from "./PageFrame";

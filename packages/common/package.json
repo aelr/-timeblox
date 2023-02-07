@@ -1,5 +1,5 @@
 {
-  "name": "common",
+  "name": "@timeblox/common",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
   "license": "UNLICENSED",
   "description": "",
   "devDependencies": {
-    "tsconfig": "workspace:*"
+    "@timeblox/tsconfig": "workspace:*"
   },
   "dependencies": {
     "ajv": "^8.12.0"

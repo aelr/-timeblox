@@ -6,10 +6,5 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint"
   },
-  "packageManager": "pnpm@7.15.0",
-  "dependencies": {
-    "docs": "0.3.2-canary.0",
-    "solid-start-node": "^0.2.20",
-    "ui": "^0.2.4"
-  }
+  "packageManager": "pnpm@7.15.0"
 }

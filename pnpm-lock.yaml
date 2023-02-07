@@ -3,60 +3,57 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers:
-      docs: 0.3.2-canary.0
-      solid-start-node: ^0.2.20
-      ui: ^0.2.4
-    dependencies:
-      docs: 0.3.2-canary.0
-      solid-start-node: 0.2.20_ayfax56g6jwpcefspubm3qbtna
-      ui: 0.2.4
+    specifiers: {}
 
   docs:
     specifiers:
       '@solidjs/meta': ^0.28.0
       '@solidjs/router': ^0.7.0
+      '@timeblox/common': workspace:*
+      '@timeblox/tsconfig': workspace:*
+      '@timeblox/ui': workspace:*
       '@unocss/preset-mini': ^0.48.4
-      common: workspace:*
       date-fns: ^2.29.3
       lodash: ^4.17.21
       lorem-ipsum: ^2.0.8
       random-js: ^2.1.0
+      rollup: ^3.10.0
       solid-js: ^1.6.10
       solid-start: ^0.2.20
-      tsconfig: workspace:*
+      solid-start-node: ^0.2.20
       typescript: ^4.8.4
-      ui: workspace:*
       undici: ^5.11.0
       unocss: ^0.47.5
       vite: ^3.1.8
     dependencies:
       '@solidjs/meta': 0.28.2_solid-js@1.6.10
       '@solidjs/router': 0.7.0_solid-js@1.6.10
-      common: link:../packages/common
+      '@timeblox/common': link:../packages/common
+      '@timeblox/ui': link:../packages/ui
       date-fns: 2.29.3
       lodash: 4.17.21
+      rollup: 3.14.0
       solid-js: 1.6.10
-      solid-start: 0.2.20_xkldvgorozr2rd64n7towncbfe
-      ui: link:../packages/ui
+      solid-start: 0.2.20_vkjva64sf73ktmwxznregy75uy
+      solid-start-node: 0.2.20_ayfax56g6jwpcefspubm3qbtna
       undici: 5.18.0
     devDependencies:
+      '@timeblox/tsconfig': link:../packages/tsconfig
       '@unocss/preset-mini': 0.48.5
       lorem-ipsum: 2.0.8
       random-js: 2.1.0
-      tsconfig: link:../packages/tsconfig
       typescript: 4.9.5
       unocss: 0.47.6_rollup@3.14.0+vite@3.2.5
       vite: 3.2.5
 
   packages/common:
     specifiers:
+      '@timeblox/tsconfig': workspace:*
       ajv: ^8.12.0
-      tsconfig: workspace:*
     dependencies:
       ajv: 8.12.0
     devDependencies:
-      tsconfig: link:../tsconfig
+      '@timeblox/tsconfig': link:../tsconfig
 
   packages/tsconfig:
     specifiers: {}
@@ -65,12 +62,15 @@ importers:
     specifiers:
       '@solidjs/meta': ^0.28.1
       '@solidjs/router': ^0.7.0
+      '@timeblox/common': workspace:*
+      '@timeblox/tsconfig': workspace:*
       date-fns: ^2.29.3
       lodash: ^4.17.21
       random-js: ^2.1.0
+      rollup: ^3.10.0
       solid-js: ^1.6.10
       solid-start: ^0.2.20
-      tsconfig: workspace:*
+      solid-start-node: ^0.2.20
       typescript: ^4.8.4
       undici: ^5.11.0
       unocss: ^0.47.5
@@ -78,14 +78,17 @@ importers:
     dependencies:
       '@solidjs/meta': 0.28.2_solid-js@1.6.10
       '@solidjs/router': 0.7.0_solid-js@1.6.10
+      '@timeblox/common': link:../common
       date-fns: 2.29.3
       lodash: 4.17.21
+      rollup: 3.14.0
       solid-js: 1.6.10
-      solid-start: 0.2.20_xkldvgorozr2rd64n7towncbfe
+      solid-start: 0.2.20_vkjva64sf73ktmwxznregy75uy
+      solid-start-node: 0.2.20_ayfax56g6jwpcefspubm3qbtna
       undici: 5.18.0
     devDependencies:
+      '@timeblox/tsconfig': link:../tsconfig
       random-js: 2.1.0
-      tsconfig: link:../tsconfig
       typescript: 4.9.5
       unocss: 0.47.6_rollup@3.14.0+vite@3.2.5
       vite: 3.2.5
@@ -2071,11 +2074,6 @@ packages:
     resolution: {integrity: sha512-lrbCJwD9saUQrqUfXvl6qoM+QN3W7tLV5pAOs+OqOmopCCz/JkE05MHedJR1xfk4IAnZuJXPVuN5+7jNA2ZCiA==}
     dev: true
 
-  /docs/0.3.2-canary.0:
-    resolution: {integrity: sha512-jkGIXsVKFcs8SXpqJuIPZJvwAuHqNwlatDSFLhMXLQDqsvQp+IK7JAdbdJvrypJrdXUnWJTntur3s4qfh6JQCQ==}
-    hasBin: true
-    dev: false
-
   /dotenv/16.0.3:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
@@ -3411,79 +3409,6 @@ packages:
       - supports-color
     dev: false
 
-  /solid-start/0.2.20_xkldvgorozr2rd64n7towncbfe:
-    resolution: {integrity: sha512-vYSFqVAKNMUa/NOuJmP+FCgGFiLCDSrRhlvjmTWTVgY8sD4exycTPapQAQWAwUU/4KhPv5oimtVaOz6TUtxOzA==}
-    hasBin: true
-    peerDependencies:
-      '@solidjs/meta': ^0.28.0
-      '@solidjs/router': ^0.7.0
-      solid-js: ^1.6.2
-      solid-start-aws: '*'
-      solid-start-cloudflare-pages: '*'
-      solid-start-cloudflare-workers: '*'
-      solid-start-deno: '*'
-      solid-start-netlify: '*'
-      solid-start-node: '*'
-      solid-start-static: '*'
-      solid-start-vercel: '*'
-      vite: ^3.1.8
-    peerDependenciesMeta:
-      solid-start-aws:
-        optional: true
-      solid-start-cloudflare-pages:
-        optional: true
-      solid-start-cloudflare-workers:
-        optional: true
-      solid-start-deno:
-        optional: true
-      solid-start-netlify:
-        optional: true
-      solid-start-node:
-        optional: true
-      solid-start-static:
-        optional: true
-      solid-start-vercel:
-        optional: true
-    dependencies:
-      '@babel/core': 7.20.12
-      '@babel/generator': 7.20.14
-      '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.12
-      '@babel/preset-env': 7.20.2_@babel+core@7.20.12
-      '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
-      '@babel/template': 7.20.7
-      '@solidjs/meta': 0.28.2_solid-js@1.6.10
-      '@solidjs/router': 0.7.0_solid-js@1.6.10
-      '@types/cookie': 0.5.1
-      chokidar: 3.5.3
-      compression: 1.7.4
-      connect: 3.7.0
-      debug: 4.3.4
-      dequal: 2.0.3
-      dotenv: 16.0.3
-      es-module-lexer: 1.1.1
-      esbuild: 0.14.54
-      esbuild-plugin-solid: 0.4.2_awvkroftwmjuvtboeyvjro5wfu
-      fast-glob: 3.2.12
-      get-port: 6.1.2
-      parse-multipart-data: 1.5.0
-      picocolors: 1.0.0
-      rollup: 3.14.0
-      rollup-plugin-visualizer: 5.9.0_rollup@3.14.0
-      rollup-route-manifest: 1.0.0_rollup@3.14.0
-      sade: 1.8.1
-      set-cookie-parser: 2.5.1
-      sirv: 2.0.2
-      solid-js: 1.6.10
-      terser: 5.16.3
-      undici: 5.18.0
-      vite: 3.2.5
-      vite-plugin-inspect: 0.7.15_rollup@3.14.0+vite@3.2.5
-      vite-plugin-solid: 2.5.0_solid-js@1.6.10+vite@3.2.5
-      wait-on: 6.0.1_debug@4.3.4
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -3513,10 +3438,6 @@ packages:
   /statuses/1.5.0:
     resolution: {integrity: sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==}
     engines: {node: '>= 0.6'}
-    dev: false
-
-  /std/0.1.40:
-    resolution: {integrity: sha512-wUf57hkDGCoVShrhPA8Q7lAg2Qosk+FaMlECmAsr1A4/rL2NRXFHQGBcgMUFKVkPEemJFW9gzjCQisRty14ohg==}
     dev: false
 
   /streamsearch/1.1.0:
@@ -3604,12 +3525,6 @@ packages:
 
   /ufo/1.0.1:
     resolution: {integrity: sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==}
-    dev: false
-
-  /ui/0.2.4:
-    resolution: {integrity: sha512-se2D+frb/i6JwFc7j72IEa0JADF8lfgc6ivOigaYkXHOuZRBtWe8R7UZ2YiXcbJ1dYNsjq40dn39rlNRxmVdPw==}
-    dependencies:
-      std: 0.1.40
     dev: false
 
   /unconfig/0.3.7:
