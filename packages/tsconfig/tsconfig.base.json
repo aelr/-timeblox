@@ -18,8 +18,9 @@
     "target": "ESNext",
     "module": "ESNext",
     "baseUrl": "./src",
+    "rootDir": "./src",
     "exclude": [
-      "node_modules", "dist"
+      "node_modules", "dist", "test"
     ]
   }
 }

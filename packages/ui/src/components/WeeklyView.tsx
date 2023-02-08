@@ -1,13 +1,15 @@
 import { For, Index, onMount, Show } from "solid-js";
 import { range } from "lodash";
-
-import { CalendarEventView } from "common/types";
-import { FIVE_MINUTE_INTERVALS_IN_DAY } from "common/constants";
-import "./WeeklyView.css";
-import { cssGridLoc, nud, toFiveMinuteInterval } from "../utils";
 import parse from "date-fns/parse";
 import addHours from "date-fns/addHours";
 import format from "date-fns/format";
+
+import { CalendarEventView } from "@timeblox/common/types";
+import { FIVE_MINUTE_INTERVALS_IN_DAY } from "@timeblox/common/constants";
+
+import { cssGridLoc, nud, toFiveMinuteInterval } from "../utils";
+
+import "./WeeklyView.css";
 
 export type WeeklyViewProps = {
   selectedDay?: number,

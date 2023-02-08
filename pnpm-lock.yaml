@@ -17,10 +17,9 @@ importers:
       lodash: ^4.17.21
       lorem-ipsum: ^2.0.8
       random-js: ^2.1.0
-      rollup: ^3.10.0
       solid-js: ^1.6.10
-      solid-start: ^0.2.20
-      solid-start-node: ^0.2.20
+      solid-start: ^0.2.19
+      solid-start-node: ^0.2.19
       typescript: ^4.8.4
       undici: ^5.11.0
       unocss: ^0.47.5
@@ -32,7 +31,6 @@ importers:
       '@timeblox/ui': link:../packages/ui
       date-fns: 2.29.3
       lodash: 4.17.21
-      rollup: 3.14.0
       solid-js: 1.6.10
       solid-start: 0.2.20_vkjva64sf73ktmwxznregy75uy
       solid-start-node: 0.2.20_ayfax56g6jwpcefspubm3qbtna
@@ -67,10 +65,9 @@ importers:
       date-fns: ^2.29.3
       lodash: ^4.17.21
       random-js: ^2.1.0
-      rollup: ^3.10.0
       solid-js: ^1.6.10
-      solid-start: ^0.2.20
-      solid-start-node: ^0.2.20
+      solid-start: ^0.2.19
+      solid-start-node: ^0.2.19
       typescript: ^4.8.4
       undici: ^5.11.0
       unocss: ^0.47.5
@@ -81,7 +78,6 @@ importers:
       '@timeblox/common': link:../common
       date-fns: 2.29.3
       lodash: 4.17.21
-      rollup: 3.14.0
       solid-js: 1.6.10
       solid-start: 0.2.20_vkjva64sf73ktmwxznregy75uy
       solid-start-node: 0.2.20_ayfax56g6jwpcefspubm3qbtna

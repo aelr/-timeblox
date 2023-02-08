@@ -1,5 +1,5 @@
 export default function (plop) {
-	plop.setGenerator('component', {
+	plop.setGenerator('ui-component', {
 		description: 'JSX Component',
 		prompts: [{
 			type: 'input',
@@ -8,19 +8,19 @@ export default function (plop) {
 		}],
 		actions: [{
 			type: 'add',
-			path: 'src/components/{{name}}.tsx',
+			path: 'packages/ui/src/components/{{name}}.tsx',
 			templateFile: 'templates/component.tsx',
       skipIfExists: true
 		},
     {
 			type: 'add',
-			path: 'src/components/{{name}}.css',
+      path: 'packages/ui/src/components/{{name}}.css',
 			templateFile: 'templates/component.css',
       skipIfExists: true
 		},
     {
 			type: 'add',
-			path: 'src/stories/{{camelCase name}}.tsx',
+      path: 'docs/stories/{{camelCase name}}.tsx',
 			templateFile: 'templates/component-stories.tsx',
       skipIfExists: true
 		}]
@@ -34,7 +34,7 @@ export default function (plop) {
 		}],
 		actions: [{
 			type: 'add',
-			path: 'src/components/{{name}}.tsx',
+      path: 'packages/ui/src/components/{{name}}.tsx',
 			templateFile: 'templates/context.tsx',
       skipIfExists: true
 		}]

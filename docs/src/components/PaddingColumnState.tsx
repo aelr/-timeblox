@@ -1,8 +1,7 @@
 import { ParentProps, createContext, For } from "solid-js";
 import { createStore, produce } from "solid-js/store";
 import { ContextProviderComponent } from "solid-js/types/reactive/signal";
-import { JSX } from "solid-js";
-import { useContextWhenDefined } from "~/utils";
+import { useContextWhenDefined } from "@timeblox/ui/utils";
 
 export type PaddingColumnStateProps = {
   paddingColumns: number

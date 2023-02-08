@@ -1,6 +1,7 @@
 import format from "date-fns/format";
 import { Component, createMemo, createSignal, For, Show } from "solid-js";
-import { DateMilliseconds, DayEvent } from "../../../src/types";
+
+import { DateMilliseconds, DayEvent } from "@timeblox/common/types";
 
 import './DayPane.css';
 

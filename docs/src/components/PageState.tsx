@@ -1,7 +1,7 @@
 import { ParentProps, createContext } from "solid-js";
 import { createStore, produce } from "solid-js/store";
 import { ContextProviderComponent } from "solid-js/types/reactive/signal";
-import { useContextWhenDefined } from "~/utils";
+import { useContextWhenDefined } from "@timeblox/ui/utils";
 
 export type PageStateProps = {
   darkMode: boolean,
