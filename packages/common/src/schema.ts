@@ -1,7 +1,8 @@
-import Ajv, {JSONSchemaType} from "ajv";
-import { DAYS_IN_WEEK, FIVE_MINUTE_INTERVALS_IN_WEEK, HOURS_IN_DAY, MINUTES_IN_HOUR } from "./constants";
-import { decodeTimeBox } from "./timeBox";
-import { Day, TimeBlock, TimeBox, WeeklyTemplate } from "./types";
+import AjvModule, {JSONSchemaType} from "ajv";
+import { DAYS_IN_WEEK, HOURS_IN_DAY, MINUTES_IN_HOUR } from "./constants.js";
+import { decodeTimeBox } from "./timeBox.js";
+import { TimeBlock, TimeBox } from "./types.js";
+const Ajv = AjvModule.default;
 export const ajv = new Ajv();
 
 export const TimeBlockSchema: JSONSchemaType<TimeBox> = {

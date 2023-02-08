@@ -1,5 +1,5 @@
-import { DAYS_IN_WEEK, HOURS_IN_DAY, MINUTES_IN_DAY, MINUTES_IN_HOUR, MINUTES_IN_WEEK } from "./constants";
-import { Day, TimeBox } from "./types";
+import { DAYS_IN_WEEK, HOURS_IN_DAY, MINUTES_IN_DAY, MINUTES_IN_HOUR, MINUTES_IN_WEEK } from "./constants.js";
+import { Day, TimeBox } from "./types.js";
 
 
 export const createTimBox = (startDay: Day, startHour: number, startMinute: number, offsetHours: number, offsetMinutes: number) => {

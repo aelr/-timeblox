@@ -2,10 +2,12 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "compilerOptions": {
-    "composite": false,
+    "incremental": true,
+    "composite": true,
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
     "isolatedModules": true,
@@ -14,13 +16,8 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
-    "allowSyntheticDefaultImports": true,
     "target": "ESNext",
-    "module": "ESNext",
-    "baseUrl": "./src",
-    "rootDir": "./src",
-    "exclude": [
-      "node_modules", "dist", "test"
-    ]
+    "module": "NodeNext",
+    "moduleResolution": "nodenext"
   }
 }
