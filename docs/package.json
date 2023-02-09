@@ -29,11 +29,9 @@
     "solid-start-node": "^0.2.19",
     "@solidjs/meta": "^0.28.0",
     "@solidjs/router": "^0.7.0",
-    "date-fns": "^2.29.3",
-    "lodash": "^4.17.21",
-    "undici": "^5.11.0"
+    "date-fns": "^2.29.3"
   },
   "engines": {
-    "node": ">=16.8"
+    "node": ">=18.14"
   }
 }

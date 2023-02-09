@@ -3,10 +3,11 @@ import differenceInDays from "date-fns/differenceInDays";
 import getDay from "date-fns/getDay";
 import isValid from "date-fns/isValid";
 import startOfWeek from "date-fns/startOfWeek";
-import { merge, times } from "lodash";
 import { For, ParentComponent, ParentProps } from "solid-js";
 
-import { cssGridLoc } from "../utils";
+import { times } from "@timeblox/common";
+
+import { cssGridLoc } from "../utils.js";
 
 import './ThreeMonthPreview.css';
 
@@ -49,7 +50,7 @@ const ThreeMonthPreview: ParentComponent<ThreeMonthPreviewProps> = (props: Paren
       <For each={previewDaysView}>
         {(view, index) => (
           <div class="rounded-sm border-1 border-gray-500"
-            style={merge({}, view.gridLoc,
+            style={Object.assign({}, view.gridLoc,
               { "filter": `hue-rotate(${GOLDEN_ANGLE * monthDiff(weekStart, view.d)}deg)` })}>
           </div>
         )}

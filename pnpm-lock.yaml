@@ -14,14 +14,12 @@ importers:
       '@timeblox/ui': workspace:*
       '@unocss/preset-mini': ^0.48.4
       date-fns: ^2.29.3
-      lodash: ^4.17.21
       lorem-ipsum: ^2.0.8
       random-js: ^2.1.0
       solid-js: ^1.6.10
       solid-start: ^0.2.19
       solid-start-node: ^0.2.19
       typescript: ^4.8.4
-      undici: ^5.11.0
       unocss: ^0.47.5
       vite: ^3.1.8
     dependencies:
@@ -30,11 +28,9 @@ importers:
       '@timeblox/common': link:../packages/common
       '@timeblox/ui': link:../packages/ui
       date-fns: 2.29.3
-      lodash: 4.17.21
       solid-js: 1.6.10
       solid-start: 0.2.20_vkjva64sf73ktmwxznregy75uy
       solid-start-node: 0.2.20_ayfax56g6jwpcefspubm3qbtna
-      undici: 5.18.0
     devDependencies:
       '@timeblox/tsconfig': link:../packages/tsconfig
       '@unocss/preset-mini': 0.48.5
@@ -60,36 +56,22 @@ importers:
 
   packages/ui:
     specifiers:
-      '@solidjs/meta': ^0.28.1
-      '@solidjs/router': ^0.7.0
       '@timeblox/common': workspace:*
       '@timeblox/tsconfig': workspace:*
+      '@types/lodash': ^4.14.191
       date-fns: ^2.29.3
       lodash: ^4.17.21
-      random-js: ^2.1.0
       solid-js: ^1.6.10
-      solid-start: ^0.2.19
-      solid-start-node: ^0.2.19
-      typescript: ^4.8.4
-      undici: ^5.11.0
-      unocss: ^0.47.5
-      vite: ^3.1.8
+      typescript: ^4.9.5
     dependencies:
-      '@solidjs/meta': 0.28.2_solid-js@1.6.10
-      '@solidjs/router': 0.7.0_solid-js@1.6.10
       '@timeblox/common': link:../common
+      '@types/lodash': 4.14.191
       date-fns: 2.29.3
       lodash: 4.17.21
       solid-js: 1.6.10
-      solid-start: 0.2.20_vkjva64sf73ktmwxznregy75uy
-      solid-start-node: 0.2.20_ayfax56g6jwpcefspubm3qbtna
-      undici: 5.18.0
     devDependencies:
       '@timeblox/tsconfig': link:../tsconfig
-      random-js: 2.1.0
       typescript: 4.9.5
-      unocss: 0.47.6_rollup@3.14.0+vite@3.2.5
-      vite: 3.2.5
 
 packages:
 
@@ -1528,6 +1510,10 @@ packages:
 
   /@types/estree/1.0.0:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+    dev: false
 
   /@types/node/18.13.0:
     resolution: {integrity: sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==}

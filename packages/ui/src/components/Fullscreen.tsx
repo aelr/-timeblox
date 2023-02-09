@@ -1,8 +1,11 @@
-import { ParentProps, createContext } from "solid-js";
+import { ParentProps, createContext, Context } from "solid-js";
 import { createStore, produce } from "solid-js/store";
-import { ContextProviderComponent } from "solid-js/types/reactive/signal";
 
-import { useContextWhenDefined } from "../utils";
+import { useContextWhenDefined } from "../utils.js";
+
+// This is no longer exposed
+// import { ContextProviderComponent } from "solid-js/reactive/signal";
+type ContextProviderComponent<T> = Context<T>["Provider"];
 
 export type FullscreenProps = {
   fullscreen: boolean

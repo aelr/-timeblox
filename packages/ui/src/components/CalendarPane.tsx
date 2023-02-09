@@ -1,8 +1,8 @@
 import { Component } from "solid-js";
 
 import './CalendarPane.css';
-import ThreeMonthPreview from "./ThreeMonthPreview";
-import WeeklyView from "./WeeklyView";
+import ThreeMonthPreview from "./ThreeMonthPreview.jsx";
+import WeeklyView from "./WeeklyView.js";
 
 export type CalendarPaneProps = {
 

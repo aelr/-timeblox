@@ -1,5 +1,5 @@
 import { Context, createSignal, useContext } from "solid-js";
-import { FIVE_MINUTE_INTERVALS_IN_HOUR } from "@timeblox/common/constants";
+import { FIVE_MINUTE_INTERVALS_IN_HOUR } from "@timeblox/common";
 
 const separateWords = /([A-Z])/g;
 

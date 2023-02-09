@@ -1,3 +1,14 @@
 {
-  "extends": "@timeblox/tsconfig/tsconfig.solid.json"
+  "extends": "@timeblox/tsconfig/tsconfig.solid.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "dist",
+    "test"
+  ]
 }
